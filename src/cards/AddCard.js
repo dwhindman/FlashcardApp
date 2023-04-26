@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
-import Card from "./Card";
+import CardForm from "./CardForm";
 import NavBar from "../Layout/NavBar";
 import { readDeck } from "../utils/api/index";
 
@@ -34,7 +34,7 @@ function AddCard(){
             </div>
             <div className="d-flex flex-column">
                 <h2>{currentDeck.name}: Add Card</h2>
-                <Card />
+                <CardForm />
             </div>
         </>
     )

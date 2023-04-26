@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { readDeck } from "../utils/api/index";
-import Card from "./Card";
+import CardForm from "./CardForm";
 import NavBar from "../Layout/NavBar";
+
 
 function EditCard(){
     const { deckId, cardId } = useParams();
@@ -34,7 +35,7 @@ function EditCard(){
             </div>
             <div>
                 <h2>Edit Card</h2>
-                <Card mode="edit" />
+                <CardForm mode="edit" />
             </div>
         </>
     )
